@@ -1,0 +1,238 @@
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    
+}
+
+.imagen{
+    
+    /* border: 1px solid rgb(156, 150, 161);
+    box-shadow: 2px 2px 8px 4px #d8cfcfd1;
+    border-radius: 15px; */
+    font-family: sans-serif;
+    height: 250px;
+    margin: 5px;
+    padding-bottom: 5em;
+    
+    
+   
+}
+.imagen2{
+      /* border: 1px solid rgb(156, 150, 161); 
+    box-shadow: 2px 2px 8px 4px #d8cfcfd1;
+    border-radius: 15px;  */
+    font-family: sans-serif;
+    height: 250px;
+    /* margin: 0px; */
+    width: 100%;
+    padding-block-end:15em;
+   
+    
+}
+
+.foto{
+    height: 100%; 
+      
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.imagen2 img{
+    background: rgb(rgb(135, 16, 232),);
+    width: 100%;
+    height: 100%;
+    
+    
+   
+    }
+
+.imagen img{
+    background: rgb(rgb(135, 16, 232),);
+    width: 100%;
+    height: 100%;
+    
+   
+    }
+
+.texto{
+    /* background: rgb(189, 182, 182); */
+    padding: 0 16px;
+    padding-top: 1em;
+    border-radius: 15px;
+    height: 50%;
+    width: 85%;
+    text-align: center;
+    text-align: justify;
+    
+}
+
+.h3{
+    margin-left: 1em;
+    border: 20px;
+    color: black;
+}
+.imagenes{
+    padding-bottom: 15em;
+}
+ .footer{
+    margin-top: 2em;
+    position:fixed;
+} 
+
+
+/* en ordenador */
+
+@media screen and (min-width: 850px){
+    
+
+    .gallery {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill ,minmax(400px, 1fr)); */
+        grid-template-rows: 3fr 3fr 3fr 0.3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "corte_senior barba"
+                             "craneo azul"
+                             "peinado corte_toalla"
+                             "footer footer" ;
+        height: 100vh;
+        /* grid-gap: 1em; */
+        
+    }
+    
+    .imagen{
+        
+        border: 1px solid rgb(156, 150, 161);
+        box-shadow: 2px 2px 8px 4px #d8cfcfd1;
+        border-radius: 15px;
+        font-family: sans-serif;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: 5px;
+        align-items: left;
+        float: left;
+        padding-block-end:10em; 
+        
+        
+       
+    }
+    .servicio{
+         
+        margin-top: 5em;
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .imagen2{
+          /* border: 1px solid rgb(156, 150, 161); 
+        box-shadow: 2px 2px 8px 4px #d8cfcfd1;
+        border-radius: 15px;  */
+        font-family: sans-serif;
+        height: 700px;
+        margin: 5px;
+        width: 700px;
+         padding-block-end:10em; 
+        align-items: left;
+        float: left;
+        display: grid;
+       
+        
+    }
+    
+    .foto{
+        height: 100%; 
+          
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+    .imagen2 img{
+        background: rgb(rgb(135, 16, 232),);
+        width: 100%;
+        height: 100%;
+        
+        
+       
+        }
+    
+    .imagen img{
+        background: rgb(rgb(135, 16, 232),);
+        width: 100%;
+        height: 100%;
+        
+       
+        }
+    
+    .texto{
+        /* background: rgb(189, 182, 182); */
+        padding: 0 16px;
+        padding-top: 1em;
+        border-radius: 15px;
+        height: 20%;
+        width: 85%;
+        text-align: center;
+        text-align: justify;
+        
+    }
+    
+    .h3{
+        margin-left: 1em;
+        border: 20px;
+        color: black;
+    }
+    .imagenes{
+        padding-bottom: 5em;
+    }
+     .footer{
+        grid-area: footer;
+        margin-top: 2em;
+        position:relative;
+        
+    } 
+
+    .servicio{
+        padding-block-end:6em; 
+    }
+
+
+    .peinado{
+       
+        grid-area: peinado;
+    }
+
+    .corte_senior{
+       
+        grid-area: corte_senior;
+    }
+    .corte_toalla{
+        
+        grid-area: corte_toalla;
+    }
+    .barba{
+        
+        grid-area: barba;
+    }
+    .craneo{
+        
+        grid-area: craneo;
+    }
+    .azul{
+        
+        grid-area: azul;
+    }
+};
+    
+

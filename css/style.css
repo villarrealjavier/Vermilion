@@ -1,0 +1,165 @@
+.estilosCSS {
+  color: #f3505a;
+  color: #d43440;
+  color: #ecebea;
+  color: #085979;
+  color: #64babe;
+  color: #a59f99;
+  /* letras normales
+   Font-family: Copperplate, Copperplate Gothic Light, fantasy.
+   TITULOS:
+   Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+   CSS MENU
+   https://codepen.io/GeoffreyCrofte/pen/ajKVRq*/
+}
+
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #ecebea;
+}
+
+header {
+  background: #64babe;
+  margin: 0;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.breadCrumb {
+  background: #c1dcdd8f;
+}
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #F3505A;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #64babe;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: auto;
+  height: 85%;
+}
+.logoMenu {
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  width: 25px;
+  height: 25px;
+}
+
+.nombreMarca {
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: Copperplate, Copperplate Gothic Light;
+}
+
+/*MENU WEB*/
+.menuWeb {
+  display: none;
+}
+/*FIN MENU WEB*/
+@media only screen and (min-width:450px) {
+    header{
+        height: 10%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+  .logo {
+    float: left;
+  }
+}
+@media screen and (min-width: 992px) {
+    .main-nav{
+        display: none;
+    }
+    .open-main-nav{
+        display: none;
+    }
+  /*MENU WEB*/
+  .menuWeb {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "homenav servnav galnav resnav locnav contnav abnav";
+  }
+  .homenav {
+    display: grid;
+    grid-area: homenav;
+  }
+  .servnav {
+    display: grid;
+    grid-area: servnav;
+  }
+  .galnav {
+    display: grid;
+    grid-area: galnav;
+  }
+  .galnav {
+    display: grid;
+    grid-area: galnav;
+  }
+  .resnav {
+    display: grid;
+    grid-area: resnav;
+  }
+  .locnav {
+    display: grid;
+    grid-area: locnav;
+  }
+  .contnav {
+    display: grid;
+    grid-area: contnav;
+  }
+  .abnav {
+    display: grid;
+    grid-area: abnav;
+  }
+  .menuWeb a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+  }
+  .menuWeb a.activated{
+    background-color: #ffffff;
+    border: solid #ffffff;
+    color: #000;
+  }
+  .menuWeb a.activated:hover{
+    background-color: #000;
+    border: solid #000;
+    color: #ffffff;
+  }
+  .menuWeb a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+  }
+  .menuWeb a:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+
+
+  /*FIN MENU WEB*/
+}

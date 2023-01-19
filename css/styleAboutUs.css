@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.botonMultimedida{
+  background-color: #373b37; /* Green */
+border: none;
+color: white;
+text-align: center;
+font-size: 20px;
+/* text-align: justify; */
+/* text-decoration: none;
+display: inline-block; */
+/* font-size: 24px; */
+
+}
+html {
+  box-sizing: border-box;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "cardDani"
+  "cardSergio"
+  "cardPilar"
+  "cardJavi"
+  "cardVicen"
+
+}
+
+.cardDani{
+  display: grid;
+  grid-area: cardDani;
+}
+.cardSergio{
+  display: grid;
+  grid-area: cardSergio;
+}
+.cardPilar{
+  display: grid;
+  grid-area: cardPilar;
+}
+.cardJavi{
+  display: grid;
+  grid-area: cardJavi;
+}
+.cardVicen{
+  display: grid;
+  grid-area: cardVicen;
+}
+
+.card img{
+  height: 450px;
+  
+}
+
+.footer {
+  position: relative;
+}
+.footer-loc{
+  position: absolute;
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #F3505A;
+  color: white;
+}
+
+.card-container {
+  padding: 0 16px;
+}
+
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #d43440;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 8px outset #64babe;
+
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+}
+
+.card img{
+  object-fit: cover;
+  height: 300px;
+}
+
+@media screen and (min-width: 450px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cardDani  cardDani    cardSergio cardSergio "
+    "cardPilar cardPilar cardJavi cardJavi"
+    ". cardVicen cardVicen ."
+
+}
+
+}
+
+@media screen and (min-width: 992px){
+
+  .grid-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "cardDani  cardDani  cardDani cardSergio cardSergio cardSergio "
+      "cardPilar cardPilar cardJavi cardJavi cardVicen cardVicen"
+
+  }
+  .card img{
+    height: 450px;
+    
+  }
+
+  
+
+
+}

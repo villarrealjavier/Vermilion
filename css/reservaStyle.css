@@ -1,0 +1,553 @@
+.main h2 {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #F3505A;
+    color: white;
+  }
+
+
+.main, .botonSubmit {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
+
+
+.formulario {
+    display: grid;
+    margin: 20px;
+    background-color: #085979;
+    border-radius: 5px;
+}
+
+
+.titulo-formulario {
+    display: grid;
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.grupos-input .formulario-grupo {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.formulario-submit {
+    display: grid;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.formulario-grupo input {
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.formulario-submit .botonSubmit {
+    padding: 6px;
+    border: none;
+    background-color: #d43440;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+} 
+
+input, button {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+textarea {
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.formulario-submit .botonSubmit:hover {
+    box-shadow: 0 0 20px #64babe;
+}
+
+
+label {
+    display: none;
+}
+
+
+.footer{
+    position: relative;
+    color: black;
+}
+
+
+.inputDiv {
+    display: grid;
+}
+
+
+.mensajeInput {
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* ====== AQUÍ EMPIEZA @media PARA TABLETS ====== */
+@media screen and (min-width: 600px) {
+
+    .grupos-input {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 18px;
+        font-weight: 70%;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas: 
+        "grupo1 grupo2"
+        "mensajeInput mensajeInput"
+        "formularioSubmit formularioSubmit";
+    }
+
+
+    .mensajeInput {
+        display: grid;
+        grid-area: mensajeInput;
+    }
+
+    
+
+    .formulario-submit {
+        display: grid;
+        grid-area: formularioSubmit;
+    }
+
+
+    .grupo1 {
+        display: grid;
+        grid-area: grupo1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo1Div1"
+        "grupo1Div2"
+        "grupo1Div3"
+        "grupo1Div4";
+    }
+
+
+    .grupo1 input, .grupo2 input {
+        padding: 10px;
+    }
+
+    .grupo2 .horaInput input {
+        padding: 7px;
+    }
+
+
+    .grupo1Div1 {
+        display: grid;
+        grid-area: grupo1Div1;
+    }
+
+    .grupo1Div2 {
+        display: grid;
+        grid-area: grupo1Div2;
+    }
+
+    .grupo1Div3 {
+        display: grid;
+        grid-area: grupo1Div3;
+    }
+
+    .grupo1Div4 {
+        display: grid;
+        grid-area: grupo1Div4;
+    }
+
+
+    .formulario-grupo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:  
+        "labelDiv"
+        "inputDiv";
+    }
+
+    
+    .labelDiv, .inputDiv {
+        align-self: center;
+    }
+
+
+    .labelDiv {
+        display: grid;
+        font-size: 18px;
+        grid-area: labelDiv;
+    }
+
+
+    .inputDiv {
+        display: grid;
+        grid-area: inputDiv;
+    }
+
+
+    .grupo2 {
+        display: grid;
+        grid-area: grupo2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo2Div1"
+        "grupo2Div2"
+        "grupo2Div3"
+        "grupo2Div4";
+    }
+
+
+    .grupo2Div1 {
+        display: grid;
+        grid-area: grupo2Div1;
+    }
+
+    .grupo2Div2 {
+        display: grid;
+        grid-area: grupo2Div2;
+    }
+
+    .grupo2Div3 {
+        display: grid;
+        grid-area: grupo2Div3;
+    }
+
+
+    .grupo2Div4 {
+        display: grid;
+        grid-area: grupo2Div4;
+    }
+
+
+    .grupo1, .grupo2 {
+        margin-bottom: 20px;
+    }
+
+
+    .emailInput {
+        position: relative;
+        top: 2px;
+    }
+
+
+    .fechaInput {
+        position: relative;
+        top: 3px;
+    }
+
+
+    .horaInput {
+        position: relative;
+        top: 3px;
+    }
+
+
+    .titulo-formulario {
+        padding: 3px;
+        font-size: 18px;
+    }
+
+
+    input {
+        width: 70%;
+    }
+
+
+    .formulario-submit .botonSubmit {
+        padding: 8px;
+        position: relative;
+        top: 16px;
+    } 
+
+
+    .emailInput input, .emailInput label {
+        position: relative;
+        top: -1px;
+    }
+    
+    
+    .fechaInput input, .fechaInput label {
+        position: relative;
+        top: -1px;
+    }
+
+
+    input, button {
+        padding: 8px;
+    }
+
+
+    label {
+        display: initial;
+    }
+
+
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
+    }
+
+
+    .horaInput input {
+        padding: -5px;
+    }
+
+
+    .footer{
+        position: fixed;
+    }
+
+
+    .mensajeInput {
+        margin: collapse;
+    }
+
+}
+
+
+/*PARA MONITORES*/
+@media screen and (min-width: 992px) {
+
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
+    }
+
+    .grupos-input {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 18px;
+        font-weight: 70%;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas: 
+        "grupo1 grupo2"
+        "mensajeInput mensajeInput"
+        "formularioSubmit formularioSubmit";
+    }
+
+
+    .mensajeInput {
+        display: grid;
+        grid-area: mensajeInput;
+    }
+
+    
+
+    .formulario-submit {
+        display: grid;
+        grid-area: formularioSubmit;
+    }
+
+
+    .grupo1 {
+        display: grid;
+        grid-area: grupo1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo1Div1"
+        "grupo1Div2"
+        "grupo1Div3"
+        "grupo1Div4";
+    }
+
+
+    .grupo1 input, .grupo2 input {
+        padding: 10px;
+    }
+
+    .grupo2 .horaInput input {
+        padding: 7px;
+    }
+
+
+    .grupo1Div1 {
+        display: grid;
+        grid-area: grupo1Div1;
+    }
+
+    .grupo1Div2 {
+        display: grid;
+        grid-area: grupo1Div2;
+    }
+
+    .grupo1Div3 {
+        display: grid;
+        grid-area: grupo1Div3;
+    }
+
+    .grupo1Div4 {
+        display: grid;
+        grid-area: grupo1Div4;
+    }
+
+
+    .formulario-grupo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "labelDiv inputDiv";
+    }
+
+    
+    .labelDiv, .inputDiv {
+        align-self: center;
+    }
+
+
+    .labelDiv {
+        display: grid;
+        font-size: 18px;
+        grid-area: labelDiv;
+    }
+
+
+    .inputDiv {
+        display: grid;
+        grid-area: inputDiv;
+    }
+
+
+    .grupo2 {
+        display: grid;
+        grid-area: grupo2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo2Div1"
+        "grupo2Div2"
+        "grupo2Div3"
+        "grupo2Div4";
+    }
+
+
+    .grupo2Div1 {
+        display: grid;
+        grid-area: grupo2Div1;
+    }
+
+    .grupo2Div2 {
+        display: grid;
+        grid-area: grupo2Div2;
+    }
+
+    .grupo2Div3 {
+        display: grid;
+        grid-area: grupo2Div3;
+    }
+
+
+    .grupo2Div4 {
+        display: grid;
+        grid-area: grupo2Div4;
+    }
+
+
+    .grupo1, .grupo2 {
+        margin-bottom: 20px;
+    }
+
+
+    .emailInput {
+        position: relative;
+        top: 2px;
+    }
+
+
+    .fechaInput {
+        position: relative;
+        top: 3px;
+    }
+
+
+    .horaInput {
+        position: relative;
+        top: 3px;
+    }
+
+
+    .titulo-formulario {
+        padding: 3px;
+        font-size: 18px;
+    }
+
+
+    input {
+        width: 70%;
+    }
+
+
+    .formulario-submit .botonSubmit {
+        padding: 8px;
+        position: relative;
+        top: 16px;
+    } 
+
+
+    .emailInput input, .emailInput label {
+        position: relative;
+        top: -1px;
+    }
+    
+    
+    .fechaInput input, .fechaInput label {
+        position: relative;
+        top: -1px;
+    }
+
+
+    input, button {
+        padding: 8px;
+    }
+
+
+    label {
+        display: initial;
+    }
+
+
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
+    }
+
+
+    .horaInput input {
+        padding: -5px;
+    }
+
+
+    .footer{
+        position: fixed;
+    }
+
+
+}
+

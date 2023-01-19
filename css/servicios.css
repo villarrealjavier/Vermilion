@@ -1,0 +1,417 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: auto;
+    
+    
+    
+    
+}
+
+
+.card{
+    background-color: white;
+    transition: 0.3s;
+    padding: auto;
+    font-family: sans-serif;
+    margin-left: 0.8em;
+    margin-top: 3.5%;
+    margin-right: 0.8em;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 
+
+
+  
+
+}
+.izq{
+    grid-area: izq;
+    float: right;
+    width: 80%;
+    padding-left: 20%;
+    display: none;
+    
+    
+    
+}
+.imagen{
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.permanenteyalis{
+    display: none;
+}
+.cortesybarba{
+    display: none;
+}
+
+.tituloGaleria{
+    
+    text-align: left;
+    padding-left: 2%;
+    width: 80%;
+    background-color: #d43440;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+}
+
+.texto{
+    padding: 5px;
+   
+}
+.precio{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+
+}
+.titulo{
+    padding: 15px;
+    text-align: center;
+    margin-left: 2%;
+    font-style: italic;
+    margin:2%;
+    font-size: medium;
+    font-weight: bolder;
+}
+/* .c1:hover{
+    transform: scale(1.03,1.03);
+    
+} */
+.footer{
+    position: relative;
+}
+.separacion{
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    padding-left: 4%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 4%;
+
+    background-color: #d43440;
+}
+
+.separacion2{
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    padding-left: 4%;
+    width: 80%;
+ 
+    margin-bottom: 4%;
+
+    background-color: #d43440;
+}
+.breadCrumb{
+    margin-top: 1%;
+    
+}
+.migas{
+    font-style: italic;
+    margin: 1.8%;
+}
+
+@media only screen and (min-width:450px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 1.5fr 3fr 1fr 3fr 1fr ;
+        grid-template-areas:  
+                    "pre-container pre-container"
+                    "c1                 c2"
+                    "c3             c6"
+                    "barbas         barbas"
+                    "c5             c7"
+                  "footerdiv        footerdiv";
+                    
+        height: 100vh;
+    
+        
+        
+        
+        
+        
+    }
+    .permanenteyalis{
+        display: none;
+    }
+    .cortesybarba{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+    .footerdiv{
+        grid-area: footerdiv;
+        width: 100%;
+        
+    }
+    /* .footer{
+        position: initial;
+        
+    } */
+    header{
+        grid-area: header;
+        height: 10%;
+    }
+    .pre-container{
+        grid-area: pre-container;
+    }
+    .titulo{
+        font-size: x-large;
+        text-align: center;
+    }
+    .separacion2{
+        margin-left: 4%;
+        background-color: transparent;
+        margin-top: 4%;
+     
+    }
+    h3{
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .card{
+        margin-bottom: 12%;
+        margin-top: 0;
+        
+    }
+    
+    .c1{
+        grid-area: c1;
+        
+    }
+    .c2{
+        grid-area: c2;
+    }
+    .c3{
+        grid-area: c3;
+    }
+    .c4{
+        grid-area: c4;
+    }
+    .c5{
+        grid-area: c5;
+    }
+    .c6{
+        grid-area: c6;
+    }
+    .c7{
+        grid-area: c7;
+    }
+    .c8{
+        grid-area: c8;
+    }
+    .cortes{
+        grid-area: cortes;
+        background-color: #d43440;
+        margin-bottom: 8%;
+        height: 60%;
+        width: 80%;
+        text-align: left;
+        
+    }
+    .separacion2{
+        padding: 0;
+    }
+    .barbas{
+        grid-area: barbas;
+        background-color: #d43440;
+      
+        height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
+    }
+    .permanentes{
+        grid-area: permanentes;
+        background-color: #d43440;
+        margin-bottom: 0;
+        height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
+    }
+    .izq{
+        grid-area: izq;
+        float: right;
+        width: 80%;
+        padding-left: 20%;
+        display: none;
+        
+        
+        
+    }
+    .imagen{
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+   
+}
+/*---------------------------------------------------------*/
+@media only screen and (min-width:992px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 2fr 0.5fr 3fr 3fr 2fr 3fr 1fr;
+        grid-template-areas:
+                    "pre-container pre-container pre-container pre-container pre-container pre-container"
+                    "c1  c1  c2  c2 izq izq"
+                    "c3  c3  c6  c6 izq izq"
+                    "barbas barbas barbas barbas barbas barbas"
+                    "c5  c5  c5 c7 c7 c7"
+                    "footerdiv footerdiv footerdiv footerdiv footerdiv footerdiv" ;
+                    
+        height: 100vh;
+      
+    }
+    .migas{
+        font-size: x-large;
+        margin: 0;
+        margin-bottom: 1%;
+    }
+
+    .izq{
+        grid-area: izq;
+        float: right;
+        width: 80%;
+        padding-left: 20%;
+        display: block;
+        
+        
+        
+    }
+    .imagen{
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    
+    /* .footerdiv{
+        grid-area: footerdiv;
+        
+    } */
+    .footer{
+        grid-area: footerdiv;
+        
+    }
+    .pre-container{
+        grid-area: pre-container;
+    }
+    .titulo{
+        font-size: x-large;
+        text-align: center;
+    }
+    .separacion{
+        display: none;
+    }
+    .cortesybarba{
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 2%;
+        padding-left: 4%;
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 4%;
+
+        background-color: #d43440;
+    }
+    .permanenteyalis{
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 2%;
+        padding-left: 4%;
+        width: 80%;
+        height: 20%;
+        margin-top: 0;
+        margin-bottom: 4%;
+    }
+    
+    .separacion2{
+        margin-left: 4%;
+        background-color: transparent;
+        margin-top: 4%;
+        display: none;
+     
+    }
+    h3{
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .card{
+        margin-bottom: 12%;
+        margin-top: 0;
+       
+        
+    }
+    .c1{
+        grid-area: c1;
+       
+
+        
+    }
+    .c2{
+        grid-area: c2;
+       
+        
+      
+    }
+    .c3{
+        grid-area: c3;
+    }
+    .c4{
+        grid-area: c4;
+    }
+    .c5{
+        grid-area: c5;
+    }
+    .c6{
+        grid-area: c6;
+    }
+    .c7{
+        grid-area: c7;
+    }
+    .c8{
+        grid-area: c8;
+    }
+    .cortes{
+        grid-area: cortes;
+        background-color: #d43440;
+        margin-bottom: 8%;
+        height: 60%;
+        width: 80%;
+        text-align: left;
+        
+    }
+    .separacion2{
+        padding: 0;
+        display: none;
+    }
+    .barbas{
+        grid-area: barbas;
+        height: 65%;
+       margin-bottom: 0;
+       padding-left: 1%;
+      
+    
+
+    }
+    .permanentes{
+        grid-area: permanentes;
+        background-color: #d43440;
+        margin-bottom: 0;
+        height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+        display: none;
+
+    }
+   
+}
