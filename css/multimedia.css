@@ -14,6 +14,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+.footer{
+  position: fixed;
+}
 
 .logo {
    
@@ -28,12 +31,13 @@ body {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "titulo titulo"
     "logo2 textologo"
     "video video"
-    "audio audio";
+    "titulo3 titulo3"
+    "textoaudio audio";
     height: 100vh;
   
   }
@@ -56,5 +60,17 @@ body {
    
 }
 .audio{
+    
+    text-align: center;
     grid-area: audio;
+}
+.textoaudio{
+ 
+  grid-area: textoaudio;
+}
+.titulo3{
+  grid-area: titulo3;
+}
+.pad{
+  padding-left: 2%;
 }
