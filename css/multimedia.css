@@ -74,3 +74,37 @@ body {
 .pad{
   padding-left: 2%;
 }
+@media only screen and (max-width:850px) {
+
+  hr{
+      display: none;
+  }
+  .grid-container{
+    display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "titulo"
+      "logo2"
+      "textologo"
+      "video"
+      "titulo3"
+      "textoaudio"
+      "audio";
+      height: 100vh;
+                  
+  }
+  #videoloco{
+    width: 300px;
+    height: 210px;
+  }
+  #logomenu{
+    width: 300px;
+    height: 280px;
+  }
+  .audio{
+    margin: 0;
+    padding-bottom: 50px;
+
+  }
+}
