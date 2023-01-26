@@ -107,4 +107,24 @@ body {
     padding-bottom: 50px;
 
   }
+  .titulo{
+    margin: 1em;
+  }
+  .logo2{
+    margin: 1em;
+    
+  }
+  .textologo{
+    margin: 1em;
+  }
+  .video{
+    margin: 1em;
+  }
+  .titulo3{
+    margin: 1em;
+  }
+  .textoaudio{
+    margin: 1em;
+  }
+  
 }
